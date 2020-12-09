@@ -3,14 +3,14 @@ pipeline {
    	 stages {     	 
    	 stage("Compile") {          	 
    			 steps {               	 
-   				 //sh "mvn compile"   
+   				  "mvn compile"   
                  echo "mvn compile"
    			 }     	 
    		 }     	 
    	 stage("Unit test") {          	 
    		 steps {             
              echo "mvn test"
-   				// sh "mvn test"          	 
+   			 sh "mvn test"          	 
    			 }     	 
    		 }	 
    	 }
